@@ -6,6 +6,6 @@ permalink: /prints
 
 {% for image in site.static_files %}
   {% if image.path contains 'images/prints' %}
-    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    <img src="{{ site.baseurl }}{{ image.path }}" height="400" width="400" alt="image" />
   {% endif %}
 {% endfor %}
