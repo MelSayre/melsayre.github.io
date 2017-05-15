@@ -3,7 +3,7 @@ email: test@gmail.com
 description: Mel Sayre's personal website
 baseurl: ""
 url: "http://www.melsayre.com"
-twitter_username:
+twitter_username: priscorum
 github_username:  melsayre
 
 # Build settings
@@ -11,6 +11,7 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-gallery-generator
 exclude:
   - Gemfile
   - Gemfile.lock
