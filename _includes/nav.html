@@ -1,20 +1,14 @@
 <div id="wrapper">
-  <div id="info">
-    <div id="info-content">
-      <h1><strong>Melanie Sayre</strong></h1>
-      <p>Mother of cats</p>
-    </div>
-  </div>
 
   <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
   <div class="menu">
     <label class="menu-toggle" for="menu"><span>Toggle</span></label>
     <ul>
       <li>
-        <a href="#">Home</a>
+        <a href="{{ site.url }}">Home</a>
       </li>
       <li>
-        <a href="#">About</a>
+        <a href="{{ site.url }}/about">About</a>
       </li>
       <li>
         <label for="menu-3">Priscorum</label>
@@ -23,13 +17,13 @@
           <label class="menu-toggle" for="menu-3"><span>Toggle</span></label>
           <ul>
             <li>
-              <a href="#">Chapter 1</a>
+              <a href="{{ site.url }}/priscorum">Chapter 1</a>
             </li>
             <li>
-              <a href="#">Chapter 2</a>
+              <a href="{{ site.url }}/priscorum">Chapter 2</a>
             </li>
             <li>
-              <a href="#">Chapter 3</a>
+              <a href="{{ site.url }}/priscorum">Chapter 3</a>
             </li>
           </ul>
         </div>
@@ -41,15 +35,18 @@
           <label class="menu-toggle" for="menu-4"><span>Toggle</span></label>
           <ul>
             <li>
-              <a href="#">Yosemite</a>
+              <a href="{{ site.url }}/gallery">Yosemite</a>
             </li>
           </ul>
         </div>
       </li>
+      <li>
+        <a href="{{ site.url }}/prints">Prints</a>
       </li>
       <li>
-        <a href="#">About</a>
+        <a href="{{ site.url }}/about">About</a>
       </li>
+
     </ul>
   </div>
 </div>
