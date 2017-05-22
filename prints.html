@@ -4,31 +4,89 @@ layout: gallery
 permalink: /prints
 ---
 
-<div id="header">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ site.url }}/index.html">Home</a>
+  <a href="{{ site.url }}/priscorum">Priscorum</a>
+  <a href="{{ site.url }}/prints">Prints</a>
+  <a href="{{ site.url }}/about">About</a>
+</div>
+
+<div id="main">
+  <span style="font-size:25px;cursor:pointer;color: black;" onclick="openNav()">&#9776; Menu</span>
+  <div id="header">
   <div id="header-content">
     <h1><strong>Purchase Prints</strong></h1>
     <p>It's for charity!</p>
-    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <table>
-        <tr><td><input type="hidden" name="on0" value="Print">Print</td></tr><tr><td><select name="os0">
-        <option value="Verr Option">Verr Option $1.50 USD</option>
-        <option value="Option 2">Option 2 $0.50 USD</option>
-      </select> </td></tr>
-      </table>
-      <input type="hidden" name="currency_code" value="USD">
-      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    <p>To check out more of the things I do, visit me on <a href="www.patreon.com/melsayre">Patreon</a> </p>
+
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" style="padding: 10px; display: inline-block; background: #EEE; border: 1px #AAA solid;">
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <div style="font-weight: bold; color: #333;">
+        <input type="hidden" name="on0" value="Select print and size" />Select print and size
+      </div>
+      <div style="display:inline-block; vertical-align: middle;">
+        <select name="os1" style="background: #7B7979; color: #fff; font-family: 'Open Sans',serif;">
+          <option value="Print 2">Print 2</option>
+          <option value="Print 11">Print 7</option>
+          <option value="Print 12">Print 11</option>
+          <option value="Print 2">Print 12</option>
+          <option value="Print 11">Print 16</option>
+          <option value="Print 12">Print 20</option>
+          <option value="Print 2">Print 24</option>
+          <option value="Print 11">Print 26</option>
+          <option value="Print 12">Print 27</option>
+          <option value="Print 2">Print 29</option>
+          <option value="Print 11">Print 30</option>
+          <option value="Print 12">Print 33</option>
+          <option value="Print 2">Print 34</option>
+          <option value="Print 11">Print 35</option>
+          <option value="Print 12">Print 46</option>
+          <option value="Print 2">Print 47</option>
+          <option value="Print 11">Print 50</option>
+          <option value="Print 12">Print 52</option>
+          <option value="Print 2">Print 61</option>
+          <option value="Print 11">Print 72</option>
+          <option value="Print 12">Print 79</option>
+          <option value="Print 2">Print 87</option>
+          <option value="Print 11">Print 93</option>
+          <option value="Print 12">Print 105</option>
+          <option value="Print 2">Print 109</option>
+          <option value="Print 11">Print 110</option>
+          <option value="Print 12">Print 116</option>
+          <option value="Print 2">Print 118</option>
+          <option value="Print 11">Print 121</option>
+          <option value="Print 12">Print 124</option>
+          <option value="Print 2">Print 126</option>
+        </select>
+      </div>
+      <div style="display:inline-block; vertical-align: middle;">
+        <select name="os0" style="background: #7B7979; color: #fff; font-family: 'Open Sans',serif;">
+          <option value="5x7">5"x7" - $20 USD</option>
+          <option value="8x12">8"x12" - $25 USD</option>
+          <option value="11x14">11"x14" - $35 USD</option>
+          <option value="12x18">12"x18" - $40 USD</option>
+          <option value="Tip Jar">Tip Jar - $5 USD</option>
+        </select>
+      </div>
+      <div style="display:inline-block; vertical-align: middle;">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </div>
     </form>
+    <br><br><br>
   </div>
 </div>
 
 <div class="flex-container">
   {% for image in site.static_files %}
     {% if image.path contains 'images/prints/horizontal' %}
-      <img class="myImg" src="{{ image.path }}">
+      <div class="flex-image-container">
+        <img class="myImg" src="{{ image.path }}">
+        <div class="img-name" style="color: #7B7979;font-size: 10px"><i>{{ image.basename }}</i></div>
+      </div>
     {% endif %}
   {% endfor %}
 </div>
@@ -36,9 +94,13 @@ permalink: /prints
 <div class="flex-container">
   {% for image in site.static_files %}
     {% if image.path contains 'images/prints/vertical' %}
-      <img class="myImg" src="{{ image.path }}">
+      <div class="flex-image-container">
+        <img class="myImg" src="{{ image.path }}">
+        <div class="img-name" style="color: #7B7979;font-size: 10px"><i>{{ image.basename }}</i></div>
+      </div>
     {% endif %}
   {% endfor %}
+</div>
 </div>
 
 <!-- The Modal -->
@@ -49,5 +111,38 @@ permalink: /prints
   <img class="modal-content" id="img01">
 </div>
 
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.7)";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = $('.myImg');
+  var modalImg = $("#img01");
+  img.click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+  });
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
 
 

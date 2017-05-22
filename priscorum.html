@@ -1,0 +1,49 @@
+---
+title: Priscorum
+layout: gallery
+permalink: /priscorum
+---
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ site.url }}/index.html">Home</a>
+  <a href="{{ site.url }}/priscorum">Priscorum</a>
+  <a href="{{ site.url }}/prints">Prints</a>
+  <a href="{{ site.url }}/about">About</a>
+</div>
+
+<div id="main">
+  <span style="font-size:25px;cursor:pointer;color: black;" onclick="openNav()">&#9776; Menu</span>
+  <div id="header">
+    <div id="header-content">
+      <h1><strong>Priscorum</strong></h1>
+      <p>I scribble more things over on <a href="www.patreon.com/melsayre">Patreon!</a> </p>
+      <br><br><br>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    {% for image in site.static_files %}
+      {% if image.path contains 'images/priscorum' %}
+        <div class="flex-image-container">
+          <img class="myImg" src="{{ image.path }}">
+          <div id="img-name">{{ image.basename }}</div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.7)";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>

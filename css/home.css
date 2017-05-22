@@ -1,19 +1,13 @@
-/* for show */
-html, body {
-  height: 100%;
-}
-
 body {
-  background: url(http://37.media.tumblr.com/f6c67ec2821a91051e4175f8a102e1e2/tumblr_n6rzpcsMk41st5lhmo1_1280.jpg) 50% 50%/cover;
-}
-
-p {
-  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+  background: url(../images/bgt.png) no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.4);
 }
 
 #header {
   display: table;
-  background: rgba(0, 0, 0, 0.4);
   height: 100%;
   width: 100%;
 }
@@ -35,4 +29,8 @@ p {
   padding: 20px;
   margin: 10px;
   display: inline-block;
+}
+
+#header #header-content p {
+  margin-bottom: 15px;
 }
