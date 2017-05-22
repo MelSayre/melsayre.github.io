@@ -1,7 +1,7 @@
 body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
-  background: url(../images/bgt.png) no-repeat center center fixed;
+  background: url(../images/bg_charity.jpg) no-repeat bottom fixed;
   background-size: cover;
   background-color: rgba(0,0,0,0.4);
 }
@@ -16,15 +16,15 @@ body {
   vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
-  font-size: 16px;
+  color: #000000;
+  font-size: 25px;
 }
 #header #header-content h1 {
-  color: #fff;
-  border: 3px solid #fff;
+  color: #000000;
+  border: 3px solid #000000;
   text-align: center;
   background: rgba(0, 0, 0, 0.1);
-  font-size: 35px;
+  font-size: 50px;
   font-weight: normal;
   padding: 20px;
   margin: 10px;
